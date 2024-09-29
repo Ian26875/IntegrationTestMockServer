@@ -1,0 +1,13 @@
+﻿{
+  "EnvironmentName": "Development",
+  "MockServer": {
+    "Image": "mockserver/mockserver",
+    "Tag": "latest",
+    "ContainerName": "mock-server",
+    "ContainerReadyMessage": "MockServer started",
+    "EnvironmentSettings": [
+    ],
+    "HostPort": "1080",
+    "ContainerPort": "1080"
+  }
+}
