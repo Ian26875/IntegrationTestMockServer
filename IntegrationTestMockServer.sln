@@ -5,6 +5,8 @@ VisualStudioVersion = 17.2.32526.322
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IntegrationTestMockServer.WebAPI", "IntegrationTestMockServer.WebAPI\IntegrationTestMockServer.WebAPI.csproj", "{A446DF59-A79A-4A1E-8814-6D112E8076D5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntegrationTestMockServer.WebAPI.IntegrationTests", "IntegrationTestMockServer.WebAPI.IntegrationTests\IntegrationTestMockServer.WebAPI.IntegrationTests.csproj", "{B07BAC40-8AC9-4A5A-9FE4-FCA323C83599}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{A446DF59-A79A-4A1E-8814-6D112E8076D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A446DF59-A79A-4A1E-8814-6D112E8076D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A446DF59-A79A-4A1E-8814-6D112E8076D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B07BAC40-8AC9-4A5A-9FE4-FCA323C83599}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B07BAC40-8AC9-4A5A-9FE4-FCA323C83599}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B07BAC40-8AC9-4A5A-9FE4-FCA323C83599}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B07BAC40-8AC9-4A5A-9FE4-FCA323C83599}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
