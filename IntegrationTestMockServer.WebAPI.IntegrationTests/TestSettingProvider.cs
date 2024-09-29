@@ -69,7 +69,7 @@ public static class TestSettingProvider
             EnvironmentSettings = GetEnvironmentSettings(configuration, "MockServer:EnvironmentSettings"),
             HostPort = string.IsNullOrWhiteSpace(configuration["MockServer:HostPort"])
                            ? GetRandomPort()
-                           : configuration["Mssql:HostPort"].Equals("0")
+                           : configuration["MockServer:HostPort"].Equals("0")
                                ? GetRandomPort()
                                : ushort.TryParse(configuration["MockServer:HostPort"], out var databasePort)
                                    ? databasePort

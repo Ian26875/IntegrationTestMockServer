@@ -11,7 +11,11 @@
 
     <ItemGroup>
         <PackageReference Include="coverlet.collector" Version="6.0.0"/>
+        <PackageReference Include="FluentAssertions.Web" Version="1.5.0" />
+        <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="8.0.8" />
+        <PackageReference Include="Microsoft.AspNetCore.TestHost" Version="8.0.8" />
         <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0"/>
+        <PackageReference Include="MockServerClientNet" Version="2.1.0" />
         <PackageReference Include="Testcontainers" Version="3.10.0" />
         <PackageReference Include="xunit" Version="2.5.3"/>
         <PackageReference Include="xunit.runner.visualstudio" Version="2.5.3"/>
@@ -23,6 +27,13 @@
 
     <ItemGroup>
       <ProjectReference Include="..\IntegrationTestMockServer.WebAPI\IntegrationTestMockServer.WebAPI.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="TestSettings.json" />
+      <Content Include="TestSettings.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
     </ItemGroup>
 
 </Project>
