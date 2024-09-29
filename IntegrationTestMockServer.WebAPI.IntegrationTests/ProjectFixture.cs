@@ -26,14 +26,10 @@ public class ProjectFixture : IAsyncLifetime
         var mockServerSettings = TestSettingProvider.GetMockServerSettings();
        
         _mockServerContainer = MockServerFixture.CreateContainer(mockServerSettings, EnvironmentName);
-        
-        MockServerIp = $"127.0.0.1,{mockServerSettings.HostPort}";
     }
 
     internal static Uri MockServerEndpoint => new Uri(_mockServerContainer.GetEndpoint());
-    private static string MockServerIp { get; set; }
     
-
     /// <summary>
     /// Initializes this instance
     /// </summary>

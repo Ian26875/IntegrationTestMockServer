@@ -1,10 +1,8 @@
 ﻿using System.Net;
-using System.Net.Http.Json;
 using System.Text.Json;
 using FluentAssertions;
 using MockServerClientNet;
 using MockServerClientNet.Model;
-using Xunit.Abstractions;
 
 namespace IntegrationTestMockServer.WebAPI.IntegrationTests.Controllers;
 
@@ -15,7 +13,7 @@ public class SampleControllerTests
     
     protected HttpClient HttpClient { get; }
 
-    public SampleControllerTests(ITestOutputHelper testOutputHelper)
+    public SampleControllerTests()
     {
         this.TestWebApplicationFactory = new TestWebApplicationFactory<Program>();
         this.HttpClient = TestWebApplicationFactory.CreateDefaultClient();
